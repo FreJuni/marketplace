@@ -7,7 +7,7 @@ const multer = require("multer");
 
 const app = express();
 
-app.use(cors({ origin: "https://marketplace-client-42ux.onrender.com/" }));
+app.use(cors({ origin: "*" }));
 app.use(bodyParser.json());
 
 const storage = multer.diskStorage({
