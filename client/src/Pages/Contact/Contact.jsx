@@ -10,8 +10,8 @@ const Contact = () => {
         return <p className=" text-xl text-blue-600 text-center my-6">Thanks for joining!</p>;
     }
     return (
-        <section>
-            <h1 className=" text-2xl mb-10 font-bold">Contact Us</h1>
+        <section className=" pt-1 pb-7">
+            <h1 className=" text-2xl mb-6 font-bold">Contact Us</h1>
             <div className=" mx-auto max-w-5xl">
                 <p className=" w-1/2 text-sm">Fames curabitur vel feugiat hac augue ac montes sollicitudin vitae duis odio, luctus laoreet vehicula class id leo mus tincidunt nec sociis, eros condimentum sociosqu integer faucibus metus molestie nullam ridiculus ligula. </p>
                 <div className=" mt-10 flex items-center  ">
