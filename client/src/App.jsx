@@ -5,7 +5,7 @@ import Login from "./Pages/Auth/Login";
 import Main from "./layout/Main";
 import Profile from "./Pages/Profile/Profile";
 import AuthProvider from "./AuthProvider/AuthProvider";
-import Admin from "./Pages/admin/Admin";
+import Admin from "./Pages/Admin/Admin";
 import Details from "./Pages/Home/Details";
 import SaveProduct from "./Pages/SaveProduct/SaveProduct";
 import Contact from "./Pages/Contact/Contact";
