@@ -7,7 +7,7 @@ const multer = require("multer");
 
 const app = express();
 
-app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "https://marketplace-client-42ux.onrender.com/" }));
 app.use(bodyParser.json());
 
 const storage = multer.diskStorage({
@@ -50,7 +50,7 @@ const publicRouter = require("./routers/public");
 app.use(authRouter);
 app.use(productRouter);
 app.use("/admin", adminRouter);
-app.use("/api",publicRouter)
+app.use("/api", publicRouter)
 
 mongoose
   .connect(process.env.MONGO_URL)
