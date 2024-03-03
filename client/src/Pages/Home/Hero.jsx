@@ -74,6 +74,13 @@ const Hero = () => {
             />
           </div>
           : <>
+            {
+              products.length === 0 && (
+                <div className=" pt-7 pb-28">
+                  <h2 className=" text-center  font-bold text-xl">There was no products yet.</h2>
+                </div>
+              )
+            }
             <div className=" grid grid-cols-3 mt-5 gap-4 max-w-5xl mx-auto ">
               {
                 products.map((product, index) => {
@@ -82,9 +89,13 @@ const Hero = () => {
               }
 
             </div>
-            <div className="  w-full flex justify-center py-7">
-              <PaginationCom setPages={setPages} pages={pages} totalCount={totalCount} limitPage={limitPage} />
-            </div>
+            {
+              products.length > 0 && (
+                <div className="  w-full flex justify-center py-7">
+                  <PaginationCom setPages={setPages} pages={pages} totalCount={totalCount} limitPage={limitPage} />
+                </div>
+              )
+            }
             <div className=" absolute w-full left-0 my-24 bg-blue-600 text-white">
               <div className=" max-w-4xl text-center py-7 mx-auto">
                 <p>At Market Mingle, we believe in the seamless fusion of networking and commerce. Our platform is the ultimate destination for individuals and businesses looking to connect, collaborate, and transact.</p>
